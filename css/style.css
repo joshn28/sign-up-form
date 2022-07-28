@@ -117,7 +117,7 @@ form input {
     border: 1px solid red;
 }
 
-.form-row div input.error + span {
+.error-msg {
     color: red;
     letter-spacing: normal;
 }

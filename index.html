@@ -7,6 +7,7 @@
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <div class="form-page">
@@ -17,7 +18,7 @@
             </div>
             <p>Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a></p>
         </div>
-        <div class="form-section">
+        <div class="main-section">
             <p>
                 This is not a real service! You know you need something<br>
                 like this in your life to help you realize your deepest dreams.<br>
@@ -30,34 +31,47 @@
             <form>
                 <p>Let's do this!</p>
 
-                <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="firstName">
+                <div class="form-row">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="firstName">
+                    </div>
 
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="lastName">
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="lastName">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                <div class="form-row">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
 
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phoneNumber">
+                    <div>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phoneNumber">
+                    </div>
                 </div>
 
-                <div>
-                    <label for="pw">PASSWORD</label>
-                    <input type="password" id="pw" name="password">
+                <div class="form-row">
+                    <div>
+                        <label for="pw">PASSWORD</label>
+                        <input class="error" type="password" id="pw" name="password">
+                        <span>* Passwords do not match</span>
+                    </div>
 
-                    <label for="confirm-pw">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-pw">
+                    <div>
+                        <label for="confirm-pw">CONFIRM PASSWORD</label>
+                        <input class="error" type="password" id="confirm-pw">
+                    </div>
                 </div>
             </form>
 
             <button type="button">Create Account</button>
 
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <p class="login-link">Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>

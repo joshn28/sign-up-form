@@ -7,6 +7,9 @@
 
 :root {
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    --main-section-padding: 50px;
+    --secondary-fs: 0.8rem;
 }
 
 .image-sidebar {
@@ -35,7 +38,7 @@
 }
 
 .image-sidebar h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: "Norse Bold", sans-serif;
 }
 
@@ -54,6 +57,95 @@
     height: 100vh;
 }
 
-.form-section {
+.main-section {
     flex: 4 0 0;
+    font-weight: bold;
+    background-color: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-section > p {
+    padding-left: var(--main-section-padding);
+}
+
+.main-section button {
+    margin-left: var(--main-section-padding);
+}
+
+form {
+    background-color: white;
+    padding: 20px 0 20px var(--main-section-padding);
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+form p {
+    margin: 0 0 20px 0;
+}
+
+form input {
+    display: block;
+}
+
+.form-row {
+    display: flex;
+    font-size: 0.5rem;
+    column-gap: 100px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #1F2937;
+}
+
+.form-row input {
+    box-sizing: border-box;
+    width: 250px;
+    border-radius: 5px;
+    appearance: none;
+    border: 1px solid rgba(160, 160, 160, 0.4);
+    font-size: var(--secondary-fs);
+    padding: 5px;
+}
+
+.form-row input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-row div input.error {
+    border: 1px solid red;
+}
+
+.form-row div input.error + span {
+    color: red;
+    letter-spacing: normal;
+}
+
+.form-row div input.match {
+    border: 1px solid green;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    padding: 15px 50px;
+    border-radius: 10px;
+    font-size: var(--secondary-fs);
+    font-weight: bold;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.login-link {
+    font-weight: 500;
+    font-size: var(--secondary-fs);
+}
+
+.login-link a {
+    color: #596D48;
+    text-decoration: none;
 }

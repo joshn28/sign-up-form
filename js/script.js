@@ -2,10 +2,6 @@ const confirmPwInput = document.querySelector("#confirm-pw");
 const pwInput = document.querySelector("#pw");
 const checkMarks = document.querySelectorAll(".form-row div input.error + span");
 
-checkMarks.forEach(span => {
-    span.classList.remove("check-mark");
-});
-
 confirmPwInput.addEventListener("input", checkPasswords);
 pwInput.addEventListener("input", checkPasswords);
 

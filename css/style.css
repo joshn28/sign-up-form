@@ -126,6 +126,19 @@ form input {
     border: 1px solid green;
 }
 
+.form-row div span.check-mark {
+    position: relative;
+}
+
+.form-row div span.check-mark::after {
+    content: '✓';
+    color: green;
+    position: absolute;
+    top: -23px;
+    left: 233px;
+    font-size: 0.8rem;
+}
+
 button {
     background-color: #596D48;
     border: none;

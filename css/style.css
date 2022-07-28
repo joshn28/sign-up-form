@@ -102,7 +102,7 @@ form input {
     width: 250px;
     border-radius: 5px;
     appearance: none;
-    border: 1px solid rgba(160, 160, 160, 0.4);
+    border: 1px solid #E5E7EB;
     font-size: var(--secondary-fs);
     padding: 5px;
 }
